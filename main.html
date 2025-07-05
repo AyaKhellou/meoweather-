@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meoweather: A cozy, animated weather app built with love by Aya">
+    <meta name="author" content="Aya">
+    <meta property="og:title" content="Meoweather">
+    <meta property="og:image" content="/images/preview.png"> <!-- If you have a preview image -->
+    <title>Meoweather</title>
+    <link rel="icon" type="image/png" href="/images/favicon.svg">
+
+    <!-- css -->
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <!-- styling -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="bg-layer bg-day"></div>
+    <div class="bg-layer bg-night"></div>
+    <div class="container">
+        <div class="searchBar" >
+            <input type="text" placeholder="Enter a city" autofocus>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="weatherCards">
+            <div class="main-card">
+                <div class="cat">
+                    <svg width="250" height="305" viewBox="0 0 358 305" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="body">
+                        <g id="left-ear">
+                            <path id="left-outer-ear" d="M57.3407 62.9159C56.3379 52.399 67.2592 44.8571 76.7391 49.5201L130.379 75.9049C139.627 80.4541 140.572 93.2709 132.091 99.1276L84.1257 132.251C75.6448 138.107 63.9935 132.684 63.0152 122.424L57.3407 62.9159Z" fill="#E4E4E4" stroke="#A2A2A2" stroke-width="3"/>
+                            <path id="left-inner-ear" d="M71.3961 85.1571C70.9579 74.1584 82.1213 66.4493 92.2517 70.755L127.193 85.606C138.073 90.2302 139.577 105.036 129.849 111.754L96.4195 134.839C86.6919 141.557 73.3785 134.906 72.9078 123.093L71.3961 85.1571Z" fill="#ED9898"/>
+                        </g>
+                        <g id="right-ear">
+                            <path id="right-outer-ear" d="M289.151 62.4905C290.154 51.9736 279.232 44.4317 269.752 49.0947L216.113 75.4795C206.864 80.0287 205.919 92.8455 214.4 98.7022L262.366 131.825C270.847 137.682 282.498 132.259 283.476 121.999L289.151 62.4905Z" fill="#E4E4E4" stroke="#A2A2A2" stroke-width="3"/>
+                            <path id="right-inner-ear" d="M275.095 84.7317C275.534 73.733 264.37 66.0239 254.24 70.3296L219.299 85.1806C208.419 89.8048 206.915 104.611 216.642 111.328L250.072 134.414C259.8 141.131 273.113 134.48 273.584 122.668L275.095 84.7317Z" fill="#ED9898"/>
+                        </g>
+                        <path d="M179 74.5C254.078 74.5 314.5 125.988 314.5 189C314.5 252.012 254.078 303.5 179 303.5C103.922 303.5 43.5 252.012 43.5 189C43.5 125.988 103.922 74.5 179 74.5Z" fill="#E4E4E4" stroke="#A2A2A2" stroke-width="3"/>
+                        <line x1="174" y1="204.065" x2="174" y2="168.936" stroke="#4B4A4A" stroke-width="5"/>
+                        <path id="nose" d="M167.938 178.5C170.632 183.167 177.368 183.167 180.062 178.5L185.258 169.5C187.953 164.833 184.585 159 179.196 159H168.804C163.415 159 160.047 164.833 162.742 169.5L167.938 178.5Z" fill="#ED9898"/>
+                        <g id="left-eye-group">
+                            <circle id="left-eye" cx="129" cy="145" r="18" fill="black"/>
+                            <circle id="pupil-left" cx="133" cy="139" r="5" fill="white"/>
+                        </g>
+                        <g id="right-eye-group">        
+                            <circle id="right-eye" cx="219" cy="145" r="18" fill="black"/>
+                            <circle id="pupil-right" cx="224" cy="139" r="5" fill="white"/>
+                        </g>    
+                        <circle cx="245" fill="#F5A9B8" opacity="0.7" cy="180" r="20"></circle>
+                        <circle cx="110" fill="#F5A9B8" opacity="0.7" cy="180" r="20"></circle>
+                        <line x1="224.224" y1="177.893" x2="279.398" y2="155.18" stroke="black"/>
+                        <line x1="226.213" y1="181.68" x2="285.719" y2="177.32" stroke="black"/>
+                        <line y1="-0.5" x2="59.6657" y2="-0.5" transform="matrix(0.989113 0.147156 0.147156 -0.989113 224.494 185.609)" stroke="black"/>
+                        <line y1="-0.5" x2="59.6657" y2="-0.5" transform="matrix(-0.924712 -0.380668 -0.380668 0.924712 130.756 178.356)" stroke="black"/>
+                        <line y1="-0.5" x2="59.6657" y2="-0.5" transform="matrix(-0.997326 -0.0730775 -0.0730775 0.997326 128.921 182.179)" stroke="black"/>
+                        <line x1="130.75" y1="186.104" x2="71.7334" y2="194.884" stroke="black"/>
+                        </g>
+                        <path id="right-paw" d="M335.5 176.5C347.067 176.5 356.5 186.095 356.5 198C356.5 209.905 347.067 219.5 335.5 219.5C323.933 219.5 314.5 209.905 314.5 198C314.5 186.095 323.933 176.5 335.5 176.5Z" fill="#E4E4E4" stroke="#A2A2A2" stroke-width="3"/>
+                        <path id="left-paw" d="M22.5 176.5C34.0671 176.5 43.5 186.095 43.5 198C43.5 209.905 34.0671 219.5 22.5 219.5C10.9329 219.5 1.5 209.905 1.5 198C1.5 186.095 10.9329 176.5 22.5 176.5Z" fill="#E4E4E4" stroke="#A2A2A2" stroke-width="3"/>
+                        <mask id="path-20-inside-1_8_141" fill="white">     
+                        <path d="M174.261 202.907C174.11 203.102 174.109 203.375 174.264 203.568C176.112 205.874 178.28 207.711 180.655 208.983C183.142 210.315 185.808 211 188.5 211C191.192 211 193.858 210.315 196.345 208.983C198.72 207.711 200.888 205.874 202.736 203.568C202.891 203.375 202.89 203.102 202.739 202.907V202.907C202.522 202.626 202.098 202.626 201.873 202.9C200.154 204.987 198.156 206.657 195.974 207.825C193.604 209.094 191.065 209.747 188.5 209.747C185.935 209.747 183.396 209.094 181.026 207.825C178.844 206.657 176.846 204.987 175.127 202.9C174.902 202.626 174.478 202.626 174.261 202.907V202.907Z"/>
+                        </mask>
+                        <path d="M174.261 202.907C174.11 203.102 174.109 203.375 174.264 203.568C176.112 205.874 178.28 207.711 180.655 208.983C183.142 210.315 185.808 211 188.5 211C191.192 211 193.858 210.315 196.345 208.983C198.72 207.711 200.888 205.874 202.736 203.568C202.891 203.375 202.89 203.102 202.739 202.907V202.907C202.522 202.626 202.098 202.626 201.873 202.9C200.154 204.987 198.156 206.657 195.974 207.825C193.604 209.094 191.065 209.747 188.5 209.747C185.935 209.747 183.396 209.094 181.026 207.825C178.844 206.657 176.846 204.987 175.127 202.9C174.902 202.626 174.478 202.626 174.261 202.907V202.907Z" fill="#4B4A4A" stroke="#4B4A4A" stroke-width="10" mask="url(#path-20-inside-1_8_141)"/>
+                        <mask id="path-21-inside-2_8_141" fill="white">
+                        <path d="M145.261 202.907C145.11 203.102 145.109 203.375 145.264 203.568C147.112 205.874 149.28 207.711 151.655 208.983C154.142 210.315 156.808 211 159.5 211C162.192 211 164.858 210.315 167.345 208.983C169.72 207.711 171.888 205.874 173.736 203.568C173.891 203.375 173.89 203.102 173.739 202.907V202.907C173.522 202.626 173.098 202.626 172.873 202.9C171.154 204.987 169.156 206.657 166.974 207.825C164.604 209.094 162.065 209.747 159.5 209.747C156.935 209.747 154.396 209.094 152.026 207.825C149.844 206.657 147.846 204.987 146.127 202.9C145.902 202.626 145.478 202.626 145.261 202.907V202.907Z"/>
+                        </mask>
+                        <path d="M145.261 202.907C145.11 203.102 145.109 203.375 145.264 203.568C147.112 205.874 149.28 207.711 151.655 208.983C154.142 210.315 156.808 211 159.5 211C162.192 211 164.858 210.315 167.345 208.983C169.72 207.711 171.888 205.874 173.736 203.568C173.891 203.375 173.89 203.102 173.739 202.907V202.907C173.522 202.626 173.098 202.626 172.873 202.9C171.154 204.987 169.156 206.657 166.974 207.825C164.604 209.094 162.065 209.747 159.5 209.747C156.935 209.747 154.396 209.094 152.026 207.825C149.844 206.657 147.846 204.987 146.127 202.9C145.902 202.626 145.478 202.626 145.261 202.907V202.907Z" fill="#4B4A4A" stroke="#4B4A4A" stroke-width="10" mask="url(#path-21-inside-2_8_141)"/>
+                    </svg>
+                </div>
+                <div class="weather-des-card">
+                    <p class="weather-desc"></p>
+                    <span class="weatherIcon">
+                        <img src="images/sand-clock.png" alt="wait icon">
+                    </span>
+                </div>
+            </div>
+            <div class="details">
+                <div class="temperature">
+                    <img src="images/thermometer.png" alt="thermometer icon">
+                    <span>
+                        <p class="title">temperature</p>
+                        <p class="value"></p>
+                    </span>
+                </div>
+                <div class="wind-speed">
+                    <img src="images/wind.png" alt="wind icon">
+                    <span>
+                        <p class="title">Wind speed</p>
+                        <p class="value"></p>
+                    </span>
+                </div>
+                <div class="humidity">
+                    <img src="images/water-drop.png" alt="water drop icon">
+                    <span>
+                        <p class="title">Humidity</p>
+                        <p class="value"></p>
+                    </span>
+                </div>
+                <div class="sunSetRise">
+                    <div class="sunRise">
+                        <img src="images/sunrise.png" alt="sunrise icon">
+                        <span>
+                            <p class="title">sunrise</p>
+                            <p class="value"></p>
+                        </span>
+                    </div>
+                    <div class="sunSet">
+                        <img src="images/sunset.png" alt="sunset icon">
+                        <span>
+                            <p class="title">sunset</p>
+                            <p class="value"></p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -110,6 +110,6 @@ function getData(city) {
 }
 
 window.addEventListener("load", function(){
-    getData(window.localStorage.getItem("city"));
+    getData(window.localStorage.getItem("city") || "touggourt");
     searchInput.value = window.localStorage.getItem("city");
 })

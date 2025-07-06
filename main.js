@@ -17,6 +17,9 @@ let sunsetHolder = document.querySelector(".sunSet span .value");
 
 let details = [temperature ,windSpeed ,humidity ,sunriseHolder ,sunsetHolder];
 
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+
+
 const customIcons = {
     "01d": "sun.png",
     "01n": "moon.png",
@@ -55,7 +58,7 @@ function handleSearch() {
 
 function getData(city) {
         
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=97272d0f2201262866c7b7da22de9390`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`)
     .then((result) => result.json())
     .then((myData)=>{
 

@@ -1,3 +1,5 @@
+console.log("KEY:", import.meta.env.VITE_WEATHER_API_KEY);
+
 let searchInput = document.querySelector('.searchBar input');
 
 let searchIcon = document.querySelector('.searchBar i');

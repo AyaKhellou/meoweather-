@@ -14,7 +14,7 @@ let details = [temperature ,windSpeed ,humidity ,sunriseHolder ,sunsetHolder];
 // cat svg image 
 
 async function loadCatSVG() {
-    const response = await fetch(`/public/cat.svg`);
+    const response = await fetch(`${import.meta.env.BASE_URL}/public/cat.svg`);
     const svgText = await response.text();
     
     document.getElementById("cat-container").innerHTML = svgText;

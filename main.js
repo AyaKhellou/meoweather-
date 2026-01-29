@@ -15,17 +15,11 @@ let details = [temperature ,windSpeed ,humidity ,sunriseHolder ,sunsetHolder];
 
 async function loadCatSVG() {
     const url = `${import.meta.env.BASE_URL}cat.svg`;
-    console.log("Fetching SVG from:", url);
-
     const response = await fetch(url);
-    console.log("Response status:", response.status);
-
     const svgText = await response.text();
-    console.log("SVG length:", svgText.length);
-
+    
     document.getElementById("cat-container").innerHTML = svgText;
 }
-
 
 loadCatSVG();
 

@@ -1,0 +1,35 @@
+/* Base styles and variables */
+:root{
+    --mainColor: #E0EBFE;
+    --fontColor:#4F4F4F;
+    --borderColor:#838485;
+    font-family: "Itim", cursive;
+    --boxshadow:2px 2px 10px #848484;
+}
+body {
+    background: url("/images/background.png") repeat-x;
+    background-size:cover;
+    animation: slideClouds 90s linear infinite;
+}
+body.dayMode {
+    background: url("/images/background.png") repeat-x;
+    color: #333;
+}
+
+/* NIGHT MODE */
+body.nightMode{
+    background: url("/images/background-nightMode2.svg") repeat-x;
+    --mainColor: #CCB7E4;
+    --fontColor:#4B3F52;
+    --borderColor:#838485;
+    --boxshadow: 2px 2px 25px rgba(169, 144, 215, 0.7);
+    color: var(--fontColor);
+}
+body.nightMode .searchBar{
+    border: none;
+    box-shadow: var(--boxshadow);
+}
+/* visually hidden */
+.visually-hidden {
+    display: none;
+}

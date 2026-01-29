@@ -1,0 +1,62 @@
+/* Animations styles */
+body.nightMode .cat #left-eye-group,
+body.nightMode .cat #right-eye-group {
+    transform: scale(1.1,0.1);
+    animation: none;
+}
+body.nightMode .cat #left-ear,
+body.nightMode .cat #right-ear{
+    animation: none;
+}
+body.nightMode .cat #body{
+    animation: sleep 5s linear infinite;
+}
+
+#left-eye-group, #right-eye-group {
+    transform-origin: center;
+    animation: blink 4s infinite;
+}
+@keyframes sleep {
+    0%, 25% ,100%{
+        transform: translateY(2px);
+    }
+    50%, 75% {
+        transform: translateY(-2px);
+    }
+}
+@keyframes blink {
+    0%, 95%, 100% {
+        transform: scaleY(1);
+    }
+    97% {
+        transform: scaleY(0.1);
+    }
+}
+#left-ear{
+    transform-origin: bottom right;
+    transform-box: fill-box;
+    animation: swingLeft 1s infinite ease-in-out;
+}
+@keyframes swingLeft{
+    0%,50%, 100% { transform: rotate(0); }
+    25%,75% { transform: rotate(5deg); }
+}
+#right-ear{
+    transform-origin: bottom left;
+    transform-box: fill-box;
+    animation: swingRight 1s infinite ease-in-out;
+}
+@keyframes swingRight{
+    0%,50%, 100% { transform: rotate(0); }
+    25%,75% { transform: rotate(-5deg); }
+}
+
+
+@keyframes slideClouds {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 1440px 0;
+    }
+}

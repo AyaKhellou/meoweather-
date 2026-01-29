@@ -1,0 +1,58 @@
+/* Layout styles */
+
+/* Search bar */
+.container .searchBar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px auto 60px;
+    text-align: center;
+    background-color: var(--mainColor);
+    border: 3px solid var(--borderColor);
+    border-radius: 50px;
+    max-width: 700px;
+    height: 40px;
+    padding-left: 10px;
+}
+@media (max-width:385px) {
+    .container .searchBar{
+        margin-bottom: 15px;
+    }
+}
+
+/* CARDS */
+
+.container .weatherCards{
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    gap:40px;
+    max-width: 1000px;
+    transition: all 0.5s ease;
+}
+@media (max-width:768px) {
+    .container .weatherCards{
+        flex-direction: column;
+        max-width: 400px;
+        margin: 5px auto;
+        gap: 10px;
+    }
+}
+
+.container .weatherCards .main-card{
+    position: relative;
+}
+
+/* Details section */
+.container .weatherCards .details{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin-top: 100px;
+}
+.container .weatherCards .details .details-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}

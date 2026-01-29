@@ -22,6 +22,7 @@
   "homepage": "https://github.com/AyaKhellou/meoweather-#readme",
   "description": "",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "vite": "^7.0.2"
   },
   "devDependencies": {

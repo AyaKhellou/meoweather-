@@ -1,67 +1,71 @@
-# 🌤️ Meoweather
+🌤️ Meoweather
 
-Meoweather is a cozy, animated weather web app that shows real-time weather data with a playful and friendly UI.  
-It combines clean JavaScript logic with a character-driven design to make checking the weather feel less boring.
+Meoweather is a cozy, animated weather web app that delivers real-time data with a playful, character-driven UI. By combining clean JavaScript logic with whimsical design, it transforms a routine task into a delightful experience.
 
----
+✨ Features
 
-## ✨ Features
+    🔍 Global Search: Find real-time weather data for any city.
 
-- 🔍 Search weather by city name
-- 📍 Automatic weather based on user location (with permission)
-- 🌞 Day / 🌙 Night mode based on real sunrise & sunset times
-- 🐱 Animated SVG character that reacts to time of day
-- 💾 Saves last searched city using localStorage
-- 📱 Fully responsive design
+    📍 Geolocation: Automatic weather detection based on user location.
 
----
+    🌞 Dynamic Themes: Day and Night modes trigger automatically based on local sunrise/sunset times.
 
-## 🛠️ Built With
+    🐱 Reactive Character: An animated SVG mascot that changes its vibe based on the time of day.
 
-- HTML5
-- CSS3 (animations, responsive layout)
-- Vanilla JavaScript (ES6+)
-- OpenWeatherMap API
-- Vite (for development & bundling)
+    💾 Persistent Data: Remembers your last searched city using localStorage.
 
----
+    📱 Mobile First: Fully responsive design that looks great on any device.
 
-## 🚀 How It Works
+🛠️ Built With
 
-- On first visit, the app tries to use the user's location to show local weather.
-- If location access is denied, the user can manually search for a city.
-- The app calculates day/night mode using timezone, sunrise, and sunset data.
-- Weather icons and UI update dynamically based on conditions.
+    HTML5 & CSS3: Custom animations and responsive layouts.
 
----
+    Vanilla JavaScript (ES6+): Clean, dependency-free logic.
 
-## ▶️ Getting Started
+    OpenWeatherMap API: Reliable global weather data.
 
+    Vite: High-performance development and bundling.
+
+🚀 How It Works
+
+    Initial Load: The app requests location permission to show local weather immediately.
+
+    Fallback: If location is denied, the UI defaults to a search-ready state.
+
+    Solar Logic: The app compares the current time against the sunrise and sunset UNIX timestamps from the API to toggle themes.
+
+    UI Updates: JavaScript dynamically manipulates the DOM to swap SVG states and weather icons without a page reload.
+
+▶️ Getting Started
 1. Clone the repository
-```bash
-git clone https://github.com/your-username/meoweather.git
 
-2.Install dependencies
-```bash
+git clone https://github.com/your-username/meoweather.git
+cd meoweather
+
+2. Install dependencies
+
 npm install
 
-3. Create a .env file and add your API key
-```env
+3. Set up your API Key
+
+Create a .env file in the root directory and add your OpenWeatherMap API key:
+
 VITE_WEATHER_API_KEY=your_api_key_here
 
 4. Run the project
-```bash
+Bash
+
 npm run dev
 
----
-📸 Preview:
+📸 Preview
+Day Mode	
+![Day Mode](/images/screenshot-dayMode.png) 
 
-![Day Mode](/images/screenshot-dayMode.png)
+Night Mode
+
 ![Night Mode](/images/screenshot-nightMode.png)
 
 
 💙 Author
 
 Built with care by Aya ✨
-
-
